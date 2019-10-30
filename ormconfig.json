@@ -1,0 +1,13 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "kim",
+    "password": "",
+    "database": "waffle",
+    "entities": [
+        "src/entity/*.js"
+    ],
+    "logging": true,
+    "synchronize": true
+}
