@@ -23,7 +23,7 @@ createConnection().then(connection => {
         return res.send(results);
     });
 
-    app.post('/users/:id', async function (req: Request, res: Response) {
+    app.post('/users', async function (req: Request, res: Response) {
         const user = await userRepository.create(req.body);
         const results = await userRepository.save(user);
         return res.send(results);
