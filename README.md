@@ -3,7 +3,7 @@
 WaffleStudio17.5 Rookies Final Assignment Test Server
 
 > 와플 스튜디오 Rookies 마지막 과제를 위한 TestServer입니다
-> 테스트 서버는 Express.js. Postgresql, Typeorm을 이용하여 구현하였습니다.
+> 테스트 서버는 Express.js. Postgresql, Typeorm을 이용하여 구현되어 .
 
 ## 로컬 환경에 서버 구축하기
 
@@ -54,10 +54,10 @@ CREATE DATABASE waffle;   # can be anything, but waffle recommended
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5432, // recommended
+  "port": 5432,
   "username": "your user name",
   "password": "your password",
-  "database": "your database name", // recommended: waffle
+  "database": "waffle",
   "entities": ["src/entity/*.js"],
   "logging": true,
   "synchronize": true
