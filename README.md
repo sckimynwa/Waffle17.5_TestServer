@@ -88,4 +88,5 @@ CREATE DATABASE waffle;   # can be anything, but waffle recommended
 | /users     | `POST`   | `{ name: String, major: String }` | user         | Add user               |
 | /users/:id | `GET`    | .                                 | user         | Get user by id         |
 | /users/:id | `PUT`    | `{ name: String, major: String }` | user         | Edit user info by id   |
-| /users/:id | `DELETE` | .                                 | { ..., "affected": 1 }            | Delete user info by id |
+| /users/:id | `DELETE` | .                                 | `{ ..., "affected": 1 }`            | Delete user info by id |
+> HttpError code는 convention과 같습니다.
